@@ -571,4 +571,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: E:/Unity Projects/RianTestZad/Build v1.0.apk
+  playerPath: E:/Unity Projects/RianovTestZad/Build v1.0.apk

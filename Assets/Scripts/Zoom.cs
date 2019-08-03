@@ -40,16 +40,12 @@ namespace Assets.Scripts
 
                 float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
 
-                if (deltaMagnitudeDiff > 0f)
-                {
-                    GameManager.Instance.OnCameraMoved();
+                GameManager.Instance.OnCameraMoved();
 
-                    _cam.orthographicSize += deltaMagnitudeDiff * _pinchZoomSpeed;
+                _cam.orthographicSize += deltaMagnitudeDiff * _pinchZoomSpeed;
 
-                    _cam.orthographicSize = Mathf.Clamp(_cam.orthographicSize,
-                        _minHeight * GameManager.Instance.Step, _maxHeight * GameManager.Instance.Step);
-                }
-
+                _cam.orthographicSize = Mathf.Clamp(_cam.orthographicSize,
+                    _minHeight * GameManager.Instance.Step, _maxHeight * GameManager.Instance.Step);
             }
         }
 
